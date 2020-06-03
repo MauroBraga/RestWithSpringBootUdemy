@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class MathController {
 
 	
-	@RequestMapping(value = "sum/numberOne/numberTwo", method= RequestMethod.GET)
+	@RequestMapping(value = "sum/{numberOne}/{numberTwo}", method= RequestMethod.GET)
 	public Double greeting(@PathVariable(value = "numberOne") String numberOne,@PathVariable(value = "numberTwo") String numberTwo)throws Exception {
-		if(!isNumeric(numberOne) || isNumeric(numberTwo)) {
+		if(!isNumeric(numberOne) || !isNumeric(numberTwo)) {
 			throw new Exception();
 		}
 		Double sum = convertDouble(numberOne) + convertDouble(numberTwo);
