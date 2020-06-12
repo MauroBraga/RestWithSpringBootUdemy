@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.mrb.model.Person;
+import br.com.mrb.data.model.Person;
+import br.com.mrb.data.view.PersonVO;
 import br.com.mrb.services.PersonServices;
 
 @RestController
@@ -24,22 +25,22 @@ public class PersonController {
 	private PersonServices service;
 	
 	@GetMapping
-	public List<Person> findAll() {
+	public List<PersonVO> findAll() {
 		return service.findAll();
 	}	
 	
 	@GetMapping("/{id}")
-	public Person findById(@PathVariable("id") Long id) {
+	public PersonVO findById(@PathVariable("id") Long id) {
 		return service.findById(id);
 	}	
 	
 	@PostMapping
-	public Person create(@RequestBody Person person) {
+	public PersonVO create(@RequestBody Person person) {
 		return service.create(person);
 	}
 	
 	@PutMapping
-	public Person update(@RequestBody Person person) {
+	public PersonVO update(@RequestBody Person person) {
 		return service.update(person);
 	}	
 	

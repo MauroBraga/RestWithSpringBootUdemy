@@ -1,4 +1,4 @@
-package br.com.mrb.model;
+package br.com.mrb.data.model;
 
 import java.io.Serializable;
 
