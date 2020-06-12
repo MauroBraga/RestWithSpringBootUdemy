@@ -35,12 +35,12 @@ public class PersonController {
 	}	
 	
 	@PostMapping
-	public PersonVO create(@RequestBody Person person) {
+	public PersonVO create(@RequestBody PersonVO person) {
 		return service.create(person);
 	}
 	
 	@PutMapping
-	public PersonVO update(@RequestBody Person person) {
+	public PersonVO update(@RequestBody PersonVO person) {
 		return service.update(person);
 	}	
 	
