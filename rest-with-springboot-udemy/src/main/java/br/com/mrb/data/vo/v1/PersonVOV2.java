@@ -1,4 +1,4 @@
-package br.com.mrb.data.vo.v2;
+package br.com.mrb.data.vo.v1;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -5,7 +5,7 @@ import java.util.Date;
 import org.springframework.stereotype.Service;
 
 import br.com.mrb.data.model.Person;
-import br.com.mrb.data.vo.v2.PersonVOV2;
+import br.com.mrb.data.vo.v1.PersonVOV2;
 
 @Service
 public class PersonConverter {

@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 import br.com.mrb.converter.DozerConverter;
 import br.com.mrb.converter.custom.PersonConverter;
 import br.com.mrb.data.model.Person;
-import br.com.mrb.data.vo.PersonVO;
-import br.com.mrb.data.vo.v2.PersonVOV2;
+import br.com.mrb.data.vo.v1.PersonVO;
+import br.com.mrb.data.vo.v1.PersonVOV2;
 import br.com.mrb.exception.ResourceNotFoundException;
 import br.com.mrb.repository.PersonRepository;
 
